@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Electronic Ballot Box</title>
+</head>
+<body>
+
+    <div class="urna">
+        <!--Screen: In this section, you will be able to see your candidate-->
+        <div class="screen">
+
+            <div class="division-1">
+                <!--in that division will be the candidate's information-->
+                <div class="division-1-left">
+
+                    <div class="d-1l-1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="d-1l-2">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="d-1l-3">
+                        
+                        <div class="number flasher"></div>
+                        <div class="number"></div>
+
+                    </div>
+                    <div class="d-1l-4">
+                        Nome: ----- <br/>
+                        Partido: ----- <br/>
+                        Vice-Prefeito: -----
+                    </div>
+
+                </div>
+
+                <div class="division-1-right">
+
+                    <div class="d-1r-img">
+                        <img src="images/84.jpg" alt="">
+                        Prefeito
+                    </div>
+                    <div class="d-1r-img small">
+                        <img src="images/84_2.jpg" alt="">
+                        Vice-Prefeito
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="division-2">
+                <!--in that division will be the basic information of the use of the electronic ballot box-->
+                Aperte a tecla:<br/>
+                VERDE para CONFIRMAR este voto<br/>
+                LARANJA para REDEFINIR este voto
+            </div>
+
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+        <!--Keyboard: In this part you will be responsible for entering information, which will be handled by JavaScript-->
+        <div class="keyboard">
+
+            <div class="keyboard--lines">
+                <div class="keyboard--keys">1</div>
+                <div class="keyboard--keys">2</div>
+                <div class="keyboard--keys">3</div>
+            </div>
+            <div class="keyboard--lines">
+                <div class="keyboard--keys">4</div>
+                <div class="keyboard--keys">5</div>
+                <div class="keyboard--keys">6</div>
+            </div>
+            <div class="keyboard--lines">
+                <div class="keyboard--keys">7</div>
+                <div class="keyboard--keys">8</div>
+                <div class="keyboard--keys">9</div>
+            </div>
+            <div class="keyboard--lines">
+                <div class="keyboard--keys">0</div>
+            </div>
+            <div class="keyboard--lines">
+                <div class="keyboard--keys key--branco">BRANCO</div>
+                <div class="keyboard--keys key--corrige">CORRIGE</div>
+                <div class="keyboard--keys key--confirma">CONFIRMA</div>
+            </div>
+
+        </div>
+        <!---------------------------------------------------------------------------------------------->
+
+    </div>
+    
+</body>
+</html>

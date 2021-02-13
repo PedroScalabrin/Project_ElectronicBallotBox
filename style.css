@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna {
+    background-color: #dbd5c9;
+    padding: 30px;
+    display: flex;
+}
+
+.screen {
+    width: 500px;
+    height: 320px;
+    background: linear-gradient(to right, #e8e8e8, #c1c1c1);
+    border: 2px solid #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.keyboard {
+    background-color: #403A3A;
+    margin-left: 30px;
+}
+
+.keyboard--lines {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.keyboard--keys {
+    width: 70px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 3px 3px 0px #555;
+}
+
+.key--branco {
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+}
+
+.key--corrige {
+    background-color: #f09046;
+    color: #000;
+    font-size: 15px;
+}
+
+.key--confirma {
+    background-color: #48c079;
+    color: #000;
+    font-size: 15px;
+    width: 90px;
+    height: 50px;
+}
+
+/*SCREEN DIVISIONS*/
+
+.division-1 {
+    flex: 1;
+    display: flex;
+}
+
+/*DIVISION 1 LEFT*/
+.division-1-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+.d-1l-1 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.d-1l-2 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.d-1l-3 {
+    height: 50px;
+}
+.number {
+    display: inline-block;
+    height: 40px;
+    width: 30px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+}
+.flasher {
+    animation-name: flasher;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.d-1l-4 {
+    flex: 1;
+    line-height: 30px;
+}
+
+/*DIVISION 1 RIGHT*/
+.division-1-right {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.d-1r-img {
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+.d-1r-img img {
+    width: 100%;
+}
+.d-1r-img.small {
+    width: 85%;
+    font-size: 12px;
+}
+.division-2 {
+   height: 50px;
+   font-size: 14px;
+   border-top: 2px solid #000;
+   padding-left: 10px;
+}
+
+@keyframes flasher {
+    0% { opacity: 0.2; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
