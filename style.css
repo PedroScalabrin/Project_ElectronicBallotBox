@@ -4,6 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
 }
 
 .urna {
@@ -144,6 +145,21 @@ body {
 .d-1r-img.small {
     width: 85%;
     font-size: 12px;
+}
+
+.help--users {
+    display: flex;
+    border: 1px solid #000;
+    background-color: #fff;
+    text-align: center;
+    font-size: 14px;
+}
+
+.candidates {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 55px 10px 55px;
 }
 
 /*ADDITIONAL*/
