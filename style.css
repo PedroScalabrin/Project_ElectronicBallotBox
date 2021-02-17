@@ -73,6 +73,13 @@ body {
     display: flex;
 }
 
+.division-2 {
+    height: 50px;
+    font-size: 14px;
+    border-top: 2px solid #000;
+    padding-left: 10px;
+ }
+
 /*DIVISION 1 LEFT*/
 .division-1-left {
     flex: 1;
@@ -80,20 +87,26 @@ body {
     flex-direction: column;
     padding-left: 10px;
 }
+
 .d-1l-1 {
     height: 50px;
     display: flex;
     align-items: center;
 }
+
 .d-1l-2 {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .d-1l-3 {
     height: 50px;
+    display: flex;
+    align-items: center;
 }
+
 .number {
     display: inline-block;
     height: 40px;
@@ -103,11 +116,7 @@ body {
     line-height: 40px;
     font-size: 25px;
 }
-.flasher {
-    animation-name: flasher;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
+
 .d-1l-4 {
     flex: 1;
     line-height: 30px;
@@ -120,24 +129,48 @@ body {
     flex-direction: column;
     align-items: flex-end;
 }
+
 .d-1r-img {
     border: 1px solid #000;
     background-color: #fff;
     text-align: center;
     font-size: 14px;
 }
+
 .d-1r-img img {
     width: 100%;
 }
+
 .d-1r-img.small {
     width: 85%;
     font-size: 12px;
 }
-.division-2 {
-   height: 50px;
-   font-size: 14px;
-   border-top: 2px solid #000;
-   padding-left: 10px;
+
+/*ADDITIONAL*/
+.big--warning {
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.branco {
+    align-items: flex-start;
+}
+
+.end {
+    flex: 1;
+    font-size: 100px;
+    align-items:center;
+}
+
+/*ANIMATIONS*/
+.flasher {
+    animation-name: flasher;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes flasher {

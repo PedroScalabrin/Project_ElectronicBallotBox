@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Electronic Ballot Box</title>
 </head>
 <body>
@@ -23,9 +22,10 @@
                     </div>
                     <div class="d-1l-2">
                         <span>VEREADOR</span>
-                    </div>
+                    </div> 
+                    
                     <div class="d-1l-3">
-                        
+                        Número:  
                         <div class="number flasher"></div>
                         <div class="number"></div>
 
@@ -66,33 +66,34 @@
         <div class="keyboard">
 
             <div class="keyboard--lines">
-                <div class="keyboard--keys">1</div>
-                <div class="keyboard--keys">2</div>
-                <div class="keyboard--keys">3</div>
+                <div class="keyboard--keys" onClick="clicked('1')">1</div>
+                <div class="keyboard--keys" onClick="clicked('2')">2</div>
+                <div class="keyboard--keys" onClick="clicked('3')">3</div>
             </div>
             <div class="keyboard--lines">
-                <div class="keyboard--keys">4</div>
-                <div class="keyboard--keys">5</div>
-                <div class="keyboard--keys">6</div>
+                <div class="keyboard--keys" onClick="clicked('4')">4</div>
+                <div class="keyboard--keys" onClick="clicked('5')">5</div>
+                <div class="keyboard--keys" onClick="clicked('6')">6</div>
             </div>
             <div class="keyboard--lines">
-                <div class="keyboard--keys">7</div>
-                <div class="keyboard--keys">8</div>
-                <div class="keyboard--keys">9</div>
+                <div class="keyboard--keys" onClick="clicked('7')">7</div>
+                <div class="keyboard--keys" onClick="clicked('8')">8</div>
+                <div class="keyboard--keys" onClick="clicked('9')">9</div>
             </div>
             <div class="keyboard--lines">
-                <div class="keyboard--keys">0</div>
+                <div class="keyboard--keys" onClick="clicked('0')">0</div>
             </div>
             <div class="keyboard--lines">
-                <div class="keyboard--keys key--branco">BRANCO</div>
-                <div class="keyboard--keys key--corrige">CORRIGE</div>
-                <div class="keyboard--keys key--confirma">CONFIRMA</div>
+                <div class="keyboard--keys key--branco" onClick="execBranco()">BRANCO</div>
+                <div class="keyboard--keys key--corrige" onClick="execCorrige()">CORRIGE</div>
+                <div class="keyboard--keys key--confirma" onClick="execConfirma()">CONFIRMA</div>
             </div>
 
         </div>
         <!---------------------------------------------------------------------------------------------->
-
     </div>
-    
+    <div class=""></div>
+    <script src="steps.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
